@@ -1,0 +1,105 @@
+/* swiper */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  /* position: relative; */
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  margin: 0 2px;
+  transition: background-color 0.3s ease;
+  width: 15px;
+}
+
+.select {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.active,
+.dot:hover {
+  background-color: #584f4f;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* text */
+
+.single {
+  background-color: #14274a;
+  color: #fff;
+  font-family: montserrat;
+  margin-top: 17px;
+  padding: 26px;
+  text-align: center;
+}
+
+/* footer */
+
+.view {
+  align-items: center;
+  border: 3px solid #14274a;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 80px;
+}
+
+.view .view-body {
+  display: flex;
+}
+
+.view .view-body .text {
+  font-size: 24px;
+}
+
+.view .view-body .btn-som {
+  background-color: #e0b973;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 26px;
+  margin-right: 30px;
+  width: 30px;
+}
